@@ -33,6 +33,8 @@ Node.js, npm, Visual Studio Code, Git, HTML, CSS, JavaScript, ESLint, Prettier, 
 
 The greeting test passed (1 test, 0 failures). ESLint and Prettier checks completed successfully. The starter greeting was retained in the semantic page used for Lab 02; its screenshot is included in the [Lab 02 report](Lab-02-Documentation.md#results-and-evidence). No separate Lab 01 screenshot was available.
 
+![Greeting retained in the Lab 02 page; a separate Lab 01 capture was not available](screenshots/Lab-02-Page.png)
+
 ### Conclusion
 
 The project has a usable Node.js development setup, an organized folder structure, a working greeting page, and an automated test for the greeting function.
