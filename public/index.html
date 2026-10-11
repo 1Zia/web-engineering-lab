@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Engineering Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+      <p class="site-title">Web Engineering Lab</p>
+      <h1 id="greeting">Hello, World!</h1>
+      <nav>
+        <ul>
+          <li><a href="#schedule" aria-current="location">Office Hours</a></li>
+          <li><a href="#feedback">Send Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section id="schedule" aria-labelledby="schedule-heading">
+        <h2 id="schedule-heading">Office Hours</h2>
+        <table>
+          <caption>
+            Weekly office hours
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Time</th>
+              <th scope="col">Instructor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>
+                <time datetime="10:00">10:00</time> -
+                <time datetime="11:00">11:00</time>
+              </td>
+              <td>Lab Engineer</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>
+                <time datetime="14:00">14:00</time> -
+                <time datetime="15:00">15:00</time>
+              </td>
+              <td>Lab Engineer</td>
+            </tr>
+          </tbody>
+        </table>
+        <figure>
+          <svg
+            role="img"
+            aria-labelledby="pin-title"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <title id="pin-title">Location pin</title>
+            <path
+              fill="#0b3d91"
+              d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"
+            />
+          </svg>
+          <figcaption>All office hours are held in Room 214.</figcaption>
+        </figure>
+      </section>
+      <svg
+        class="decorative-divider"
+        aria-hidden="true"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <circle cx="12" cy="12" r="3" fill="#0b3d91" />
+      </svg>
+      <section id="feedback" aria-labelledby="feedback-heading">
+        <h2 id="feedback-heading">Send Feedback</h2>
+        <form action="#" method="post">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              aria-describedby="email-hint"
+            />
+            <span id="email-hint">We will only use this to reply to you.</span>
+          </div>
+          <fieldset>
+            <legend>Topic</legend>
+            <label
+              ><input type="radio" name="topic" value="lab" checked /> Lab
+              content</label
+            >
+            <label
+              ><input type="radio" name="topic" value="other" /> Something
+              else</label
+            >
+          </fieldset>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Send feedback</button>
+        </form>
+      </section>
+    </main>
+    <footer><address>Contact your instructor for help.</address></footer>
+  </body>
+</html>

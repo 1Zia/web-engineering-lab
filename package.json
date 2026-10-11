@@ -1,0 +1,28 @@
+{
+  "name": "web-engineering-lab",
+  "version": "1.0.0",
+  "description": "Web Engineering laboratory work for Labs 01-03.",
+  "main": "public/script.js",
+  "scripts": {
+    "test": "node --test",
+    "lint": "eslint .",
+    "format": "prettier --check .",
+    "start": "serve public"
+  },
+  "keywords": [
+    "web-engineering",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Ziaullah Khan",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^10.12.0",
+    "prettier": "^3.9.10",
+    "serve": "^14.2.6"
+  },
+  "overrides": {
+    "compression": "1.8.2"
+  }
+}

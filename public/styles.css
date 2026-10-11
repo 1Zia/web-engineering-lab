@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  color: #172033;
+  background-color: #f5f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 16px;
+  z-index: 10;
+  padding: 0.6rem 1rem;
+  color: #fff;
+  background-color: #0b3d91;
+}
+.skip-link:focus {
+  top: 14px;
+}
+header,
+footer {
+  padding: 1.25rem max(1rem, calc((100% - 760px) / 2));
+  color: #fff;
+  background-color: #0b3d91;
+}
+.site-title {
+  margin: 0;
+  font-weight: bold;
+}
+h1 {
+  margin: 0.25rem 0 1rem;
+}
+nav ul {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav a {
+  color: #fff;
+}
+nav a[aria-current="location"] {
+  font-weight: bold;
+  text-decoration-thickness: 3px;
+}
+main {
+  width: min(760px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+section {
+  padding: 1.5rem;
+  border: 1px solid #ccd5e4;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+h2 {
+  margin-top: 0;
+  color: #0b3d91;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+caption {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+th,
+td {
+  padding: 0.65rem;
+  border: 1px solid #68778d;
+  text-align: left;
+}
+th {
+  color: #fff;
+  background-color: #0b3d91;
+}
+figure {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+}
+.decorative-divider {
+  display: block;
+  margin: 1rem auto;
+}
+form {
+  display: grid;
+  gap: 1rem;
+}
+.form-field {
+  display: grid;
+  gap: 0.25rem;
+}
+label,
+legend {
+  font-weight: bold;
+}
+input,
+textarea,
+button {
+  font: inherit;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #68778d;
+  border-radius: 0.25rem;
+}
+#email-hint {
+  color: #46566c;
+  font-size: 0.9rem;
+}
+fieldset {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #68778d;
+}
+button {
+  width: fit-content;
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #0b3d91;
+  cursor: pointer;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #0b5fff;
+  outline-offset: 2px;
+}
+footer address {
+  font-style: normal;
+}
+@media (max-width: 520px) {
+  nav ul,
+  fieldset {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  table {
+    font-size: 0.9rem;
+  }
+}
