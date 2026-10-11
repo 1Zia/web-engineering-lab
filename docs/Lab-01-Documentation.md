@@ -1,61 +1,38 @@
-# Lab 01: Setting Up the Web Engineering Development Environment
+# Web Engineering Lab Report
+
+## Lab 01: Development Environment Setup
 
 **Student:** Ziaullah Khan  
 **Roll number:** 2330-0145  
 **Degree:** BS Artificial Intelligence (BS AI)  
 **Course:** Web Engineering
 
-## Objective
+### Objective
 
-Set up a consistent web-development toolchain, create the standard project structure, build a minimal greeting page, and verify the JavaScript with an automated test.
+Set up a basic web-development environment, organize the project files, create a webpage that displays a greeting, and verify the greeting function with an automated test.
 
-## Tools and technologies
+### Tools and technologies
 
-- Node.js 24.21.0 and npm 11.19.0
-- Visual Studio Code 1.139.1
-- Git 2.55.0
-- ESLint 10.12.0, Prettier 3.9.10, and serve 14.2.6
-- HTML, CSS, JavaScript, and Node's built-in test runner
+Node.js, npm, Visual Studio Code, Git, HTML, CSS, JavaScript, ESLint, Prettier, `serve`, and Node's built-in test runner.
 
-The required VS Code extensions were installed: ESLint, Prettier - Code Formatter, Live Server, and HTML CSS Support. Project settings enable format on save with Prettier.
+### Tasks and implementation
 
-## Tasks performed
+| Task                                 | Implementation                                                                                                                   |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| Prepare the development environment  | Used Node.js and npm for JavaScript and package commands, VS Code for editing, and Git for version control.                      |
+| Create the project structure         | Organized the webpage in `public/` and its automated test in `tests/`. Added project configuration, README, and editor settings. |
+| Configure project commands and tools | Added ESLint, Prettier, and `serve` as development dependencies. Configured `test`, `lint`, `format`, and `start` npm scripts.   |
+| Build the starter webpage            | Created `public/index.html`, `public/styles.css`, and `public/script.js`; the page displays “Hello, World!”.                     |
+| Implement and test the greeting      | Implemented `greet(name)` in `public/script.js` and added a Node test in `tests/greet.test.js` for `greet("World")`.             |
 
-1. Verified Node.js, npm, VS Code, and Git from the terminal.
-2. Configured the Git author as Ziaullah Khan with the GitHub-provided private commit address.
-3. Created `public/`, `tests/`, the README, npm configuration, ESLint configuration, Prettier configuration, and VS Code settings.
-4. Installed ESLint, Prettier, and serve as development dependencies.
-5. Added `lint`, `format`, and `start` scripts to `package.json`.
-6. Created the starter page and a reusable `greet(name)` function that displays `Hello, World!`.
-7. Added `tests/greet.test.js` using Node's built-in test runner.
-8. Ran the test, lint, formatting, and dependency security checks.
+### Concepts applied
 
-## Important code concepts
+`package.json` stores dependencies and repeatable project commands. A JavaScript function accepts a name and returns a greeting string. The same function is used by the webpage and imported by the test. ESLint checks JavaScript rules; Prettier checks consistent formatting.
 
-`package.json` records commands and development dependencies. The greeting function returns a string, is used by the browser, and is exported for the Node test. ESLint finds JavaScript mistakes, while Prettier checks consistent formatting.
+### Results and evidence
 
-## Results
+The greeting test passed (1 test, 0 failures). ESLint and Prettier checks completed successfully. The starter greeting was retained in the semantic page used for Lab 02; its screenshot is included in the [Lab 02 report](Lab-02-Documentation.md#results-and-evidence). No separate Lab 01 screenshot was available.
 
-- `npm test`: 1 test passed, 0 failed.
-- `npm run lint`: passed with no errors.
-- `npm run format`: all files matched Prettier formatting.
-- `npm audit`: 0 vulnerabilities.
-- The project is ready for a local commit. It was not pushed because remote operations were intentionally excluded from this work session.
+### Conclusion
 
-## Conclusion
-
-The project now has a reproducible beginner-friendly toolchain, standard folder structure, working greeting page, and automated test.
-
-## Viva preparation
-
-**Why is `package.json` important?**  
-It records project metadata, dependencies, and reusable npm commands.
-
-**What is the difference between ESLint and Prettier?**  
-ESLint checks JavaScript for errors and rule violations; Prettier standardizes code formatting.
-
-**Why use a local server?**  
-It previews files through HTTP, which is closer to how a deployed website works than opening a `file://` URL.
-
-**What does `node --test` do?**  
-It runs tests using Node's built-in test runner.
+The project has a usable Node.js development setup, an organized folder structure, a working greeting page, and an automated test for the greeting function.

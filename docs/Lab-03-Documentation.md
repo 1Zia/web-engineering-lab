@@ -1,66 +1,45 @@
-# Lab 03: CSS Fundamentals - Styling, Layout and Animation
+# Web Engineering Lab Report
+
+## Lab 03: CSS Fundamentals - Styling, Layout and Animation
 
 **Student:** Ziaullah Khan  
 **Roll number:** 2330-0145  
 **Degree:** BS Artificial Intelligence (BS AI)  
 **Course:** Web Engineering
 
-## Objective
+### Objective
 
-Practise the main ways CSS controls selectors, colours, text, units, the box model, layout, positioning, responsive design, transitions, transforms, and animation.
+Practise CSS methods, selectors, typography, units, Flexbox, the box model, positioning, responsive media queries, transitions, transforms, and keyframe animation in a standalone page.
 
-## Tools and technologies
+### Tools and technologies
 
-- HTML5 and CSS3
-- VS Code with Live Server
-- Chrome headless browser for viewport and computed-style checks
+HTML5, CSS3, Visual Studio Code, Live Server, and a web browser.
 
-## Tasks performed
+### Tasks and implementation
 
-1. Demonstrated external, internal, and inline CSS; id and class selectors; and the required blue, red, green, blue, and pink styling.
-2. Set the document to Times New Roman and created centred, capitalised text.
-3. Compared equivalent `px`, `em`, and `rem` nested font sizes and explained their reference points.
-4. Built a 60px Flexbox navbar with the exact dark background, orange logo and search button, three links, and evenly spaced single-line content.
-5. Created three bordered 100px boxes with different colours and 0.5 opacity; the final box is circular.
-6. Placed a fixed “Love Nature” background-image panel on the right with `z-index: 10`.
-7. Centred a child using Flexbox and explained that `align-self` overrides `align-items` for one item.
-8. Added the four required responsive colour ranges.
-9. Added a hover transition that increases button text to 24px and rotates it 5 degrees.
-10. Added an infinitely spinning circular loader with one coloured border side.
+| Task                                   | Implementation                                                                                                                                                                                                          |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. CSS methods, colours, and selectors | Linked `style.css`, added an internal style block, and used inline styling. Demonstrated an id selector with a blue box, class selectors with red headings, and external green, internal blue, and inline pink buttons. |
+| 2. Typography                          | Set the page font to Times New Roman and centred and capitalised the example text.                                                                                                                                      |
+| 3. CSS units                           | Compared nested `px`, `em`, and `rem` font sizes and included a short explanation of their reference sizes.                                                                                                             |
+| 4. Flexbox navbar                      | Created a 60px dark navbar with an orange logo and search button, three navigation links, and evenly distributed content.                                                                                               |
+| 5. Box model and opacity               | Styled three 100px square boxes with borders, different background colours, and `opacity: 0.5`; made the third box circular.                                                                                            |
+| 6. Positioning and stacking            | Added a fixed “Love Nature” panel on the right with a background image and `z-index: 10`.                                                                                                                               |
+| 7. Flexbox alignment                   | Centred an item horizontally and vertically in its flex parent; used `align-self` on the child.                                                                                                                         |
+| 8. Responsive media queries            | Changed a demo box to green at widths up to 299px, pink from 300px to 399px, red from 400px to 599px, and blue from 600px onward.                                                                                       |
+| 9. Transition and transform            | Added a button hover transition that sets its font size to 24px and rotates it by 5 degrees.                                                                                                                            |
+| 10. Loading animation                  | Created a circular loader with one coloured border side and an infinite `spin` keyframe animation.                                                                                                                      |
 
-## Important code concepts
+### Concepts applied
 
-The cascade determines which declaration wins: inline CSS overrides internal and external rules in this example. Relative units adapt to another size, Flexbox aligns items on two axes, and media queries apply rules only within specified viewport ranges. Transitions animate a state change, while keyframes can repeat an animation independently.
+The CSS cascade resolves declarations from external, internal, and inline styles. `em` and `rem` use different font-size references. Flexbox controls alignment; the box model combines content, padding, borders, and margins. Positioning and `z-index` control placement and stacking. Media queries adapt styles to viewport widths, while transitions and keyframes animate CSS properties.
 
-## Results
+### Results and evidence
 
-Browser checks confirmed:
+The standalone page is available at `css-lab/index.html` and can be opened with Live Server. Browser inspection confirmed the four responsive colours, the fixed background panel at `z-index: 10`, and the loader's infinite `spin` animation.
 
-- 280px viewport: green responsive box
-- 350px viewport: pink responsive box
-- 500px viewport: red responsive box
-- 700px viewport: blue responsive box
-- Hover state: font size changed to 24px and the rotation transform applied
-- Loader animation name: `spin`
-- Nature panel: fixed position with z-index 10
-- Flex child: centred on both axes
+![Lab 03 page showing the CSS task examples](screenshots/Lab-03-Page.png)
 
-![Completed Lab 03 page](screenshots/Lab-03-Page.png)
+### Conclusion
 
-## Conclusion
-
-All ten activities are collected in one straightforward page that can be opened with Live Server and inspected in DevTools.
-
-## Viva preparation
-
-**What is the difference between `em` and `rem`?**  
-`em` depends on a relevant parent or element font size; `rem` always depends on the root font size.
-
-**What does `z-index` control?**  
-It controls the stacking order of positioned elements.
-
-**Which has priority: `align-items` or `align-self`?**  
-`align-self` overrides the parent's `align-items` value for one flex item.
-
-**How is a transition different from an animation?**  
-A transition animates between states such as normal and hover; a keyframe animation can run through multiple stages and repeat automatically.
+The ten tasks demonstrate foundational CSS styling, layout, responsive behavior, and animation in one page.

@@ -1,61 +1,44 @@
-# Lab 02: Semantic HTML and Accessibility Foundations
+# Web Engineering Lab Report
+
+## Lab 02: Semantic HTML and Accessibility
 
 **Student:** Ziaullah Khan  
 **Roll number:** 2330-0145  
 **Degree:** BS Artificial Intelligence (BS AI)  
 **Course:** Web Engineering
 
-## Objective
+### Objective
 
-Extend the Lab 01 page with semantic landmarks, accessible tabular data, meaningful graphics, an accessible form, keyboard support, and WCAG-oriented automated checks.
+Extend the Lab 01 webpage with semantic HTML and accessibility features for page navigation, tabular data, graphics, forms, and keyboard users.
 
-## Tools and technologies
+### Tools and technologies
 
-- Semantic HTML5, CSS, and JavaScript
-- Chrome headless browser
-- axe-core 4.13.0 and Lighthouse
+HTML5, CSS, JavaScript, Chrome, axe-core, and Lighthouse.
 
-## Tasks performed
+### Tasks and implementation
 
-1. Kept `h1#greeting` and the Lab 01 greeting script.
-2. Added the first-focusable skip link, `header`, list-based `nav`, one `main`, two ordered `h2` sections, and a footer `address`.
-3. Built an Office Hours table with a caption, `thead`, `tbody`, scoped column headings, and machine-readable `time` values.
-4. Added a decorative SVG hidden with `aria-hidden` and an informative location SVG with `role="img"`, `title`, `figure`, and `figcaption`.
-5. Built the feedback form with associated labels, required fields, an email hint using `aria-describedby`, a `fieldset` and `legend`, radio buttons, a textarea, and a submit button.
-6. Added `aria-current="location"` only where native HTML has no equivalent.
-7. Added visible 3px `:focus-visible` outlines and a skip link that appears on focus.
+| Task                                 | Implementation                                                                                                                                                                                         |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Preserve the Lab 01 functionality    | Kept the `h1` greeting and loaded the existing greeting script with `defer`.                                                                                                                           |
+| Add semantic page structure          | Added a skip link, `header`, list-based `nav`, one `main`, labelled sections, and a `footer` with an `address`.                                                                                        |
+| Present office hours accessibly      | Used a table caption, `thead`, `tbody`, column headers with `scope="col"`, and `time` elements with machine-readable values.                                                                           |
+| Describe images appropriately        | Marked the decorative SVG as hidden from assistive technology. Gave the informative location SVG an accessible name and placed it in a `figure` with a `figcaption`.                                   |
+| Create an accessible feedback form   | Associated labels with required inputs, connected the email hint with `aria-describedby`, grouped radio buttons in a `fieldset` with a `legend`, and added a labelled message field and submit button. |
+| Identify the current navigation item | Used `aria-current="location"` on the Office Hours link.                                                                                                                                               |
+| Make keyboard focus visible          | Added a skip link that appears on focus and a 3px `:focus-visible` outline for interactive controls.                                                                                                   |
 
-## Important code concepts
+### Concepts applied
 
-Semantic landmarks let assistive-technology users move between major page areas. Labels and table headings give controls and data explicit relationships. Native elements are preferred to unnecessary ARIA. Keyboard focus must be visible and follow the document's logical order.
+Landmarks make major page regions easier to locate. Native semantic elements provide built-in relationships, such as table headings and form labels. ARIA supplements native HTML when an additional accessible state or name is needed. Visible focus styling helps keyboard users track their position.
 
-## Results
+### Results and evidence
 
-- Automated keyboard test confirmed the expected eight Tab stops, from the skip link through the submit button.
-- Every tested interactive element displayed a 3px focus outline.
-- axe-core reported **0 violations**.
-- Lighthouse Accessibility scored **100**.
+The page was checked for keyboard navigation, focus visibility, and automated accessibility. The recorded results were eight Tab stops, visible 3px focus outlines, zero axe-core violations, and a Lighthouse Accessibility score of 100. Automated checks do not replace manual assistive-technology testing.
 
-![Implemented Lab 02 page](screenshots/Lab-02-Page.png)
+![Lab 02 semantic page with greeting, office-hours table, and feedback form](screenshots/Lab-02-Page.png)
 
-![Lighthouse Accessibility score of 100](screenshots/Lab-02-Lighthouse.png)
+![Lighthouse accessibility result](screenshots/Lab-02-Lighthouse.png)
 
-Automated tools cannot detect every accessibility issue, so manual assistive-technology testing is still recommended.
+### Conclusion
 
-## Conclusion
-
-The original greeting page is now a semantic, keyboard-operable, and automatically audited accessible page.
-
-## Viva preparation
-
-**Why must a page have only one `main` element?**  
-It identifies the page's unique primary content as a clear landmark.
-
-**Why is a placeholder not a label?**  
-It disappears during input and does not reliably provide a programmatic name.
-
-**When should `aria-hidden="true"` be used on an SVG?**  
-When the graphic is decorative and should not add noise for assistive technology.
-
-**Why use `scope="col"` on table headings?**  
-It explicitly associates each header with the cells in its column.
+The Lab 01 greeting page was extended with semantic structure and accessible table, image, form, and keyboard patterns.
