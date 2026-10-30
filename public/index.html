@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Engineering Lab</title>
+    <title>Lab 05 | Office Hours and Feedback</title>
+    <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="feedback.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -31,6 +33,7 @@
               <th scope="col">Day</th>
               <th scope="col">Time</th>
               <th scope="col">Instructor</th>
+              <th scope="col">Booking</th>
             </tr>
           </thead>
           <tbody>
@@ -41,6 +44,16 @@
                 <time datetime="11:00">11:00</time>
               </td>
               <td>Lab Engineer</td>
+              <td>
+                <button
+                  type="button"
+                  data-day="Monday"
+                  aria-pressed="false"
+                  aria-label="Book Monday office hours"
+                >
+                  <span>Book</span>
+                </button>
+              </td>
             </tr>
             <tr>
               <td>Wednesday</td>
@@ -49,6 +62,16 @@
                 <time datetime="15:00">15:00</time>
               </td>
               <td>Lab Engineer</td>
+              <td>
+                <button
+                  type="button"
+                  data-day="Wednesday"
+                  aria-pressed="false"
+                  aria-label="Book Wednesday office hours"
+                >
+                  <span>Book</span>
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -83,7 +106,13 @@
         <form action="#" method="post" novalidate>
           <div class="form-field">
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" required />
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+            />
           </div>
           <div class="form-field">
             <label for="email">Email</label>
@@ -91,6 +120,7 @@
               id="email"
               name="email"
               type="email"
+              autocomplete="email"
               required
               aria-describedby="email-hint"
             />
@@ -117,7 +147,5 @@
       <p id="status" role="status" aria-live="polite"></p>
     </main>
     <footer><address>Contact your instructor for help.</address></footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="legacy-feedback.js"></script>
   </body>
 </html>

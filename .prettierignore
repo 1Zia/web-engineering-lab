@@ -1,0 +1,6 @@
+# TypeScript compiler output is checked in for Live Server and static hosting.
+public/*.js
+docs/evidence/*.html
+docs/evidence/*.json
+test-results/
+playwright-report/

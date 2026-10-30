@@ -1,0 +1,48 @@
+[
+  {
+    "mode": "light",
+    "scores": [
+      {
+        "name": "Initial page",
+        "score": 100,
+        "failures": []
+      },
+      {
+        "name": "Empty form with validation errors",
+        "score": 100,
+        "failures": []
+      }
+    ],
+    "requests": [
+      "http://localhost:3000/",
+      "http://localhost:3000/styles.css",
+      "http://localhost:3000/main.js",
+      "http://localhost:3000/feedback.js",
+      "http://localhost:3000/utils.js"
+    ],
+    "runtimeErrors": []
+  },
+  {
+    "mode": "dark",
+    "scores": [
+      {
+        "name": "Initial page",
+        "score": 100,
+        "failures": []
+      },
+      {
+        "name": "Empty form with validation errors",
+        "score": 100,
+        "failures": []
+      }
+    ],
+    "requests": [
+      "http://localhost:3000/",
+      "http://localhost:3000/styles.css",
+      "http://localhost:3000/main.js",
+      "http://localhost:3000/feedback.js",
+      "http://localhost:3000/utils.js"
+    ],
+    "runtimeErrors": []
+  }
+]

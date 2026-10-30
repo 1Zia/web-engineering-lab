@@ -1,0 +1,8 @@
+Structural typing with extra id property
+Exit code: 0
+
+Structural typing with missing fields
+src/type-experiments.ts(4,14): error TS2739: Type '{ day: string; }' is missing the following properties from type 'Slot': start, end, room
+Deliberate delay argument error
+src/main.ts(28,15): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+Compiled output unchanged after failed build: True
