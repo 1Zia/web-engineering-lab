@@ -80,7 +80,7 @@
       </svg>
       <section id="feedback" aria-labelledby="feedback-heading">
         <h2 id="feedback-heading">Send Feedback</h2>
-        <form action="#" method="post">
+        <form action="#" method="post" novalidate>
           <div class="form-field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required />
@@ -114,7 +114,10 @@
           <button type="submit">Send feedback</button>
         </form>
       </section>
+      <p id="status" role="status" aria-live="polite"></p>
     </main>
     <footer><address>Contact your instructor for help.</address></footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="legacy-feedback.js"></script>
   </body>
 </html>
